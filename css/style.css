@@ -5,6 +5,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+/**-------BODY-----------*/
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
 /**----------HEADER--------*/
 header img{
@@ -14,7 +19,7 @@ header img{
 .menu-color {
     background-color:rgb(226, 166, 166); 
     color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
     
 }
 
@@ -25,33 +30,24 @@ header{
     align-items: center;
     padding: 15px;
     top: 0;
-
-
 }
 
 header a{
 text-decoration: none;
 }
 header h1{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
     color: white;
-    font-size: 70px;
+    font-size: 60px;
      font-weight: 700;
     text-decoration: none;
 }
 
-
-
-
-
-
-
-
 /**------MAIN-------*/
 
+
+
 .hero{
-    
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     width: 100%;
     height: 400px;
     background-image: url(../img/perrocorriendo.jpeg);
@@ -65,23 +61,23 @@ header h1{
     align-items: center;
 }
 .hero h2{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
     color:rgb(9, 9, 9);
     font-size: 40px;
     border: 3px solid;
     
 }
 .hero p{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
     color: rgb(6, 6, 6);
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 30px;
     margin-bottom:40px ;
 
 }
 .hero a{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 30px;
+    
+    font-size: 20px;
     padding: 10px;
     color: rgb(246, 244, 242);
     background-color:rgb(248, 141, 131) ;
@@ -103,7 +99,7 @@ header h1{
 .comotrabajamos div h2{
     
         background-color: rgb(226, 166, 166);
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       
         color: rgb(10, 10, 10);
         font-size: 40px;
         text-align: center;
@@ -112,11 +108,11 @@ header h1{
     
     
 }
-   
+
 .comotrabajamos div h3{
     background-color: rgb(226, 166, 166);
      text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
     color:rgb(8, 8, 8);
     font-size: 30px;
     font-weight: 30px;
@@ -128,7 +124,7 @@ header h1{
 .comotrabajamos div p{
     background-color: rgb(226, 166, 166);
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
     color: rgb(8, 8, 8);
     font-size:20px ;
     font-weight: 20px;
@@ -136,9 +132,6 @@ header h1{
     margin: 20px;
 }
 
-.comotrabajamos_nos h3 {
-flex-direction: column;
-}
 .sobrenosotros img{
     width: 700px;
     height: 420px;
@@ -150,23 +143,14 @@ flex-direction: column;
     align-items: center;
     
 }
-.sobrenosotros div h2{
-    background-color: rgb(226, 166, 166);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: rgb(10, 10, 10);
-    font-size: 40px;
-    text-align: center;
-    border: 2px solid;
-    padding: 10px;
 
-}
 .sobrenosotros div{
     width: 55%;
 }
 .sobrenosotros div h2{
     
         background-color: rgb(226, 166, 166);
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        
         color: rgb(10, 10, 10);
         font-size: 40px;
         text-align: center;
@@ -175,9 +159,8 @@ flex-direction: column;
 }
 .sobrenosotros div p{
     background-color: rgb(226, 166, 166);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: rgb(18, 18, 18);
-    font-size: 60px;
+      color: rgb(18, 18, 18);
+    font-size: 20px;
      text-align: center;
     padding: 10px;
     margin: 20px;
@@ -207,24 +190,28 @@ flex-direction: column;
     width:270px;
     height: 270px;
     text-align: center;
-    margin: 5px;
-    padding: 5px;
+    margin: 15px;
+    padding: 10px;
     box-shadow: -1px 10px 42px -7px rgba(0,0,0,0.75); 
     -webkit-box-shadow: -1px 10px 42px -7px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 10px 42px -7px rgba(0,0,0,0.75);
 }
 .productos div h3{
     margin-bottom: 10px;
+    font-size: 15px;
 }
+
 .productos h2{
     background-color: rgb(226, 166, 166) ;
     color: white;
+    font-size: 20px;
     text-align: center;
     padding: 10px;
     text-transform:uppercase ;
     padding: 10px;
     margin: 10px;
     }
+/**----GRIDS---*/
 
 .grid-galeria{
     width: 100%;
@@ -252,6 +239,7 @@ flex-direction: column;
     color: white;
     background-color: rgba(0, 0, 0, 0.353);
     width: 100%;
+    font-size: 20px;
 }
 .img-1{
     grid-column: span 2;
@@ -263,160 +251,318 @@ flex-direction: column;
     grid-row: span 2;
 }
 
+/**----PAGES NUESTROS CLIENTES---*/
 
-    /**------FOOTER-------*/
-footer{
+.nuestrosclientes h2{
+    font-size: 40px;
+    
+    color: rgb(234, 148, 148);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+.nuestrosclientes p{
+font-size: 30px;
+color: rgb(234, 148, 148);
+display: flex;
+justify-content:space-around;
+align-items: center;
+padding: 10px;
+}
+    
+
+/**----PAGES NOSOTROS---*/
+.comotrabajamos_nos h2{
+font-size: 40px;
+color:rgb(236, 107, 107);
+display: flex;
+justify-content:space-around;
+align-items: center;
+padding: 10px;
+}
+    
+.comotrabajamos_nos p{
+    font-size: 20px;
+   
+    color:rgb(236, 107, 107);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+.carrusel div img{
+    width: 100% !important;
+    height: 100% !important;
+    width: 800px !important;
+    height:400px !important;
+}
+    
+.comotrabajamos_nos footer{
     background-color:rgb(226, 166, 166) ;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+footer img{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    
+}
+/**----PAGES TRABAJA CON NOSOTROS---*/
+.trabajar_nos h2{
+    font-size: 40x;
+   
+    color: rgb(234, 148, 148);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;    
+}
+.trabajar_nos img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.trabajarconnos{
+    
+    font-size: 30px;
+    color:rgb(234, 148, 148)
+}
+.experiencia{
+   
+    font-size: 30px;
+    color:rgb(234, 148, 148)   
+}
+/**----PAGES DEJANOS TU CONTACTO---*/
+.dejanostucontacto h2{
+   
+    font-size: 40px;
+    color:rgb(234, 148, 148);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+.dejanostucontacto p{
+   
+    font-size: 25px;
+    color:rgb(234, 148, 148);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+.dejanostucontacto img{
+    width: 50%;
+    height:50%;
+    display: flex;
+    flex-direction: column;
+}
+.formulario{
+    
+    font-size: 15px;
+    color: rgb(234, 148, 148);
+}
+
+    /**------FOOTER-------*/
+footer{
+    background-color:rgb(226, 166, 166) ;
+     display:flex;
+    justify-content:space-around;
+    align-items: center;
+    
+}
     footer a{
         text-decoration: none;
         color: white;
-        font-size: 20px;
-    }
-    footer img{
-        width: 50px;
-        height: 50px;
-    }
-    footer div{
-        padding: 20px;
+        font-size: 15px;
+       
     }
     
+    footer i{
+        font-size: 40px;
+        color: white
+    
+}
  footer nav ul li{
     display: flex;
     justify-content: space-between;
     align-items: center;
  }
 
-  /**------media query-------*/
-@media screen and (max-width:920px){
-.comotrabajamos{
-    flex-direction: column;
-}
-.comotrabajamos div{
-    width: 30%;
-    text-align: center;
-}
-.comotrabajamos img{
-    display: none;
-}
-.sobrenosotros img{
-    display: none;
-}
-}
-@media screen and (max-width:850px){
-    header{
-        flex-direction: column;
-    }
+  /**------media query pages nuestros clientes grilla-------*/
 
-
-}
-@media screen and (max-width:622px){
-
-.comotrabajamos div h2{
-    font-size: 20px;
-}
-.comotrabajamos div h3{
-    font-size: 15px;
-}
-.comotrabajamos div p {
-    font-size: 8px;
-}
-}
-.sobrenosotros div h2{
-    font-size: 20px;
-    
-}
-.sobrenosotros div p {
-    font-size: 15px;
-}
-
-@media screen and (max-width:600px){
-   
-   header nav ul{
-    flex-direction: column;
+  @media screen and (max-width:960px){
+   .grid-galeria{
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: 220px;
+   }   
+   .grid-item{
+    grid-column:span 1 ;
+    grid-row:span 1 ;
    }
-   header nav ul li{
-    margin: 0;
-    text-align: center;
-   }
-    header h1{
-        font-size: 40px;
-    }
-}
+   .nuestrosclientes h2{
+    font-size: 30px;
 
-@media screen and (max-width:920px){
-    .hero h2{
-        font-size: 35px;
-    }
-    .hero p{
+   }
+   .nuestrosclientes p{
+    font-size: 20px;
+   }
+
+  }
+ @media screen and (max-width:780px){
+    .nuestrosclientes h2{
         font-size: 20px;
     }
-    .hero a{
+    .nuestrosclientes p{
         font-size: 15px;
     }
-}
+ }
 
-@media screen and (max-width:796px){
-    .hero h2{
-        font-size: 25px;
+@media screen and (max-width:542px){
+    .nuestrosclientes h2{
+        font-size: 15px;
+
+    }
+    .nuestrosclientes p{
+        font-size: 10px;
     }
 }
 
-@media screen and (max-width:580px){
-    .hero h2{
+
+
+
+  @media screen and (max-width:450px){
+    .grid-galeria{
+        grid-template-columns: 1fr;
+    }
+  }
+
+/**------media query header index--------*/
+@media screen and (max-width:550px){
+    header h1{
         font-size: 20px;
-    
     }
-    .hero p{
-font-size: 15px;
-    }
-.hero a{
-    font-size: 10px;
 }
 
-}
-
-@media screen and (max-width:460px){
-.hero h2{
-    font-size: 17px;
-}
-.hero p {
-    font-size: 15px;
-}
-.hero a {
- font-size:10px ;
-}
-}
-
-@media screen and (max-width:398px){
+/**------media query hero-------*/
+@media screen and (max-width:870px){
     .hero h2{
-        font-size: 14px;
+        font-size: 30px;
+    }
+.hero p{
+    font-size: 20px;
+}
+.hero a{
+    font-size: 15px;
+    padding: 10px;
+}
+}
+
+@media screen and (max-width:640px){
+    .hero h2{
+        font-size: 16px;
+    }
+}
+/**------media query .comotrabajamos--------*/
+@media screen and (max-width:940px){
+    .comotrabajamos div h2{
+        font-size: 30px;
+        padding: 5px;
+    }
+    .comotrabajamos div h3{
+        font-size: 20px;
+        padding: 5px;
+        margin: 5px;
+    }
+    .comotrabajamos div p{
+        font-size: 15px;
+        padding: 5px;
+        margin: 5px;
+    }
+    .comotrabajamos img{
+        width: 500px;
+        height: 300px;
+    }
+}
+@media screen and (max-width:670px){
+    .comotrabajamos div h2{
+        font-size: 20px;
+        padding: 3px;
+        margin:3px
+    }
+    .comotrabajamos div h3{
+        font-size: 10px;
+        padding: 3px;
+        margin: 3px;
+    }
+    .comotrabajamos div p{
+        font-size: 10px;
+        margin: 3px;
+        padding: 3px;
+    }
+    .comotrabajamos img{
+        display: none;
     }
 }
 
-@media screen and (max-width:880px){
-    .grid-galeria {
-        grid-template-columns: repeat(2,1fr) ;
-        grid-auto-rows: 200px;    
+/**------media query .sobrenosotros--------*/
+
+@media screen and (max-width:987px){
+    .sobrenosotros div h2{
+        font-size: 20px;
+        margin: 10px;
+        padding: 10px;
     }
-    .grid-item{
-        grid-column: span 1;
-        grid-row: span 1;
+    .sobrenosotros div p{
+        font-size: 15px;
+        margin: 10px;
+        padding: 10px;
     }
 }
+@media screen and (max-width:890px){
+    .sobrenosotros img{
+        width: 500px;
+        height: 300px;
+    }
+}
+@media screen and (max-width:670px){
+ .sobrenosotros div h2{
+    font-size: 15px;
+    margin:5px;
+    padding: 5px;
+ }   
+ .sobrenosotros div p{
+    font-size: 10px;
+    margin: 5px;
+    padding: 5px;
+    
+ }
+ .sobrenosotros img{
+    display: none;
+ }
+}
+/**------media query footer--------*/
+@media screen and (max-width:700px){
+footer h2{
+    font-size: 20px;
+}
+footer i{
+    font-size: 20px;
+    
+}
 
-
-
-
-
-
-
-
-
-
-
-
- 
+}
+@media screen and (max-width:480px){
+    footer h2{
+        font-size: 10px;
+    }
+    footer i{
+        font-size: 10px;
+    }
+}
