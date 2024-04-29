@@ -1,0 +1,229 @@
+.hero{
+width: 100%;
+    height: 400px;
+    background-image: url(../img/perrocorriendo.jpeg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    @include flex(flex,center,center,);
+    flex-direction: column;
+}
+h2{
+    color:$color-cuarto;
+    font-size: nth($font-size, 4);
+    border: 3px solid;
+}
+p{
+    color:$color-cuarto;
+    font-size: nth($font-size, 3);
+    font-weight: 30px;
+    margin-bottom:40px ;
+}
+a{
+    font-size: nth($font-size, 1);
+    padding: 10px;
+    color: $color-secundario;
+    background-color:$color-terciario;
+    text-decoration: none;
+   
+}
+ /**---pages nosotros ----*/
+.comotrabajamos{
+    @include flex(flex,space-evenly,center);
+    div{
+        white-space: 50%;
+        h2{
+            background-color:$color-principal;
+            color: $color-cuarto;
+            font-size: nth($font-size, 4);
+            text-align: center;
+            border: 2px solid;
+            padding: 10px;
+        }
+        h3{
+            background-color: $color-principal;
+            text-align: center;
+            color:$color-cuarto;
+            font-size: nth($font-size, 3);
+            font-weight: 30px;
+            padding: 10px;
+            margin: 10px;
+        }
+        p{
+            background-color: $color-principal;
+            text-align: center;
+            color: $color-cuarto;
+            font-size: nth($font-size, 1) ;
+            font-weight: 20px;
+            padding: 10px;
+            margin: 20px;
+        }
+    }
+    img{
+        width: 700px;
+        height: 500px;
+    }
+}
+.sobrenosotros{
+   @include flex(flex,row-reverse,center);
+div{
+    width: 55%;
+    h2{
+        background-color: $color-principal;
+        color: $color-cuarto;
+        font-size: nth($font-size, 4);
+        text-align: center;
+        border: 2px solid;
+        padding: 10px;
+    }
+    p{
+        background-color: $color-principal;
+        color: $color-cuarto;
+        font-size: nth($font-size, 1);
+       text-align: center;
+       padding: 10px;
+       margin: 20px;
+    }
+}
+img{
+    width: 700px;
+    height: 420px;
+}
+}
+.productos{
+    h2{
+        background-color: $color-principal ;
+        color: $color-secundario;
+        font-size: nth($font-size, 1);
+        text-align: center;
+        padding: 10px;
+        text-transform:uppercase ;
+        padding: 10px;
+        margin: 10px;  
+    }
+    div{
+        img{
+            width: 200px;
+            height: 200px;   
+        }
+        a{
+            background-color:$color-terciario;
+            text-decoration: none;
+            color:$color-secundario;
+            padding: 5px;   
+        }
+        h3{
+            margin-bottom: 8px;
+            font-size: 13px; 
+        }
+
+    }
+}
+.productos .servicios{
+    @include flex(flex,space-around,center);
+    flex-wrap: wrap; 
+
+    div{
+        border: 2px solid;
+        font-size: 15px;
+        width:270px;
+        height: 270px;
+        text-align: center;
+        margin: 15px;
+        padding: 10px;
+        box-shadow: -1px 10px 42px -7px rgba(0,0,0,0.75); 
+        -webkit-box-shadow: -1px 10px 42px -7px rgba(0,0,0,0.75);
+        -moz-box-shadow: -1px 10px 42px -7px rgba(0,0,0,0.75);  
+    }
+}
+.comotrabajamos_nos{
+    h2{
+font-size: nth($font-size, 4);
+color:$color-terciario;
+@include flex(flex,space-around,center);
+padding: 10px;
+    }
+    p{
+    font-size: nth($font-size, 1);
+   color:$color-terciario;
+    @include flex(flex,space-around,center);
+    padding: 10px;
+    }
+}
+ /**---pages nuestros clientes ----*/
+ .grid-galeria{
+     width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+    grid-auto-rows: 300px;
+    gap: 20px;
+    div{
+        img{width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: -1px 10px 42px -14px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 10px 42px -14px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 10px 42px -14px rgba(0,0,0,0.75);
+}
+
+        }
+        h3{
+    position: absolute;
+    bottom: 0;
+    color: $color-secundario;
+    background-color: $color-cuarto
+    width 100%;
+    font-size: nth($font-size, 1);
+        }
+    }
+.grid-item{
+    position: relative;
+} 
+.img-1{
+    grid-column: span 2;
+}
+.img-3{
+    grid-column: span 2; 
+}
+.img-4{
+    grid-row: span 2;
+}
+ /**---pages trabaja con nosotros ----*/
+ .trabajar_nos{
+    h2{
+font-size: nth($font-size, 3);
+    color: $color-terciario;
+    @include flex(flex,space-between,center);
+    padding: 20px; 
+    }
+    img{
+     width: 100%;
+    height: 100%;
+     flex-direction: column;
+     @extend %flex-center;
+   
+    }
+ }
+ /**----PAGES DEJANOS TU CONTACTO---*/
+.dejanostucontacto{
+    h2{
+  font-size: nth($font-size, 4);
+    color: $color-principal;
+    @include flex(flex,space-around,center);
+    padding: 10px;
+    }
+    img{
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    }
+    p{
+  font-size: nth($font-size, 3);
+    color:$color-terciario;
+    @include flex(flex,space-between,center);
+    }
+}

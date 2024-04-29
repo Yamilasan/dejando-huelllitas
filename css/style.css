@@ -99,7 +99,6 @@ header h1{
 .comotrabajamos div h2{
     
         background-color: rgb(226, 166, 166);
-       
         color: rgb(10, 10, 10);
         font-size: 40px;
         text-align: center;
@@ -112,8 +111,7 @@ header h1{
 .comotrabajamos div h3{
     background-color: rgb(226, 166, 166);
      text-align: center;
-    
-    color:rgb(8, 8, 8);
+     color:rgb(8, 8, 8);
     font-size: 30px;
     font-weight: 30px;
     padding: 10px;
@@ -124,7 +122,6 @@ header h1{
 .comotrabajamos div p{
     background-color: rgb(226, 166, 166);
     text-align: center;
-   
     color: rgb(8, 8, 8);
     font-size:20px ;
     font-weight: 20px;
@@ -150,7 +147,6 @@ header h1{
 .sobrenosotros div h2{
     
         background-color: rgb(226, 166, 166);
-        
         color: rgb(10, 10, 10);
         font-size: 40px;
         text-align: center;
@@ -255,7 +251,6 @@ header h1{
 
 .nuestrosclientes h2{
     font-size: 40px;
-    
     color: rgb(234, 148, 148);
     display: flex;
     justify-content: space-around;
@@ -328,11 +323,7 @@ footer img{
     justify-content: center;
     align-items: center;
 }
-.trabajarconnos{
-    
-    font-size: 30px;
-    color:rgb(234, 148, 148)
-}
+
 .experiencia{
    
     font-size: 30px;
@@ -388,10 +379,7 @@ footer{
         color: white
     
 }
- footer nav ul li{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+ 
  }
 
   /**------media query pages nuestros clientes grilla-------*/

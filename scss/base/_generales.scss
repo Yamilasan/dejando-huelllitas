@@ -1,0 +1,38 @@
+/**---RESET----*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/**-------BODY-----------*/
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/**-------clases de bostrap-----------*/
+.menu-color{
+    background-color:rgb(226, 166, 166);     color: white;
+}
+
+.carrusel div img{
+    width: 200% !important;
+    height: 100% !important;
+    width: 800px !important;
+    height:400px !important;
+    padding: 20px !important;
+    margin: 10px !important
+}
+.trabajarconnos{
+    font-size: 30px;
+    color:rgb(234, 148, 148)
+}
+.experiencia{
+   
+    font-size: 30px;
+    color:rgb(234, 148, 148)   
+}
+.formulario{
+    font-size: 15px;
+   color: rgb(234, 148, 148);
+   padding: 20px;
+}

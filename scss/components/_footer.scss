@@ -1,0 +1,17 @@
+footer{
+    background-color:$color-principal;
+     @include flex(flex,space-around,center);
+    a{
+        text-decoration: none;
+        background-color:$color-principal;
+        color: $color-secundario;
+        font-size: nth($font-size, 1);
+        h2{
+        font-size: nth($font-size, 1);          
+        }
+    }
+    i{
+        font-size: nth($font-size, 3);
+        color:$color-secundario;
+    }
+}

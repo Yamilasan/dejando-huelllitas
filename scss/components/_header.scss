@@ -1,0 +1,37 @@
+header{
+    background-color:$color-principal;
+    @include flex(flex,center,center);
+    padding: 15px;
+    top: 0;
+    a{
+        text-decoration: none;
+           background-color:$color-principal;
+    }
+    h1{
+        color: $color-secundario;
+        font-size: 60px;
+        font-weight: 700;
+        text-decoration: none;       
+    }
+    img{
+        width: 100px;
+            height: 100px;
+    }
+
+}
+ /**---pages nuestros clientes ----*/
+ .nuestrosclientes{
+    h2{
+        font-size: nth($font-size, 4);
+        color: $color-terciario;
+       @include flex(flex,space-around,center);
+        padding: 10px;
+    }
+    p{
+        font-size: nth($font-size, 3);
+        color: $color-terciario;
+        @include flex(flex,space-around,center);
+        padding: 10px;
+    }
+ }
+   
