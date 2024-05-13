@@ -1,9 +1,3 @@
-.trabajar_nos img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /**---RESET----*/
 * {
   margin: 0;
@@ -22,13 +16,20 @@ body {
   color: white;
 }
 
-.carrusel div img {
-  width: 200% !important;
-  height: 100% !important;
-  width: 800px !important;
-  height: 400px !important;
+.carousel-item {
+  margin: 20px !important;
   padding: 20px !important;
-  margin: 10px !important;
+}
+
+.carousel-item img {
+  width: 800px !important;
+  height: 600px !important;
+}
+
+.carruseldos {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 .trabajarconnos {
@@ -36,15 +37,16 @@ body {
   color: rgb(234, 148, 148);
 }
 
-.experiencia {
-  font-size: 30px;
-  color: rgb(234, 148, 148);
+.form-label {
+  color: rgb(226, 166, 166) !important;
+  font-size: 20px !important;
 }
 
-.formulario {
-  font-size: 15px;
-  color: rgb(234, 148, 148);
-  padding: 20px;
+.botonenviar {
+  color: rgb(226, 166, 166) !important;
+  padding: 5px !important;
+  border: 1px solid !important;
+  margin: 5px !important;
 }
 
 header {
@@ -52,7 +54,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 20px;
   top: 0;
 }
 header a {
@@ -61,7 +63,7 @@ header a {
 }
 header h1 {
   color: white;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 700;
   text-decoration: none;
 }
@@ -90,8 +92,9 @@ header img {
 
 .hero {
   width: 100%;
-  height: 400px;
-  background-image: url(../img/perrocorriendo.jpeg);
+  height: 500px;
+  padding: 10px;
+  background-image: url(../img/perrocliente.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -124,72 +127,59 @@ a {
 }
 
 /**---pages nosotros ----*/
-.comotrabajamos {
+.comotrabajamosimg {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
-.comotrabajamos div {
-  white-space: 50%;
-}
+
 .comotrabajamos div h2 {
   background-color: rgb(226, 166, 166);
   color: rgb(9, 9, 9);
   font-size: 40px;
   text-align: center;
-  border: 2px solid;
-  padding: 10px;
+  border: 1px solid;
+  padding: 3px;
+  margin: 5px;
 }
 .comotrabajamos div h3 {
   background-color: rgb(226, 166, 166);
   text-align: center;
   color: rgb(9, 9, 9);
   font-size: 30px;
-  font-weight: 30px;
-  padding: 10px;
-  margin: 10px;
+  padding: 5px;
+  margin: 5px;
 }
 .comotrabajamos div p {
   background-color: rgb(226, 166, 166);
   text-align: center;
   color: rgb(9, 9, 9);
   font-size: 20px;
-  font-weight: 20px;
-  padding: 10px;
-  margin: 20px;
-}
-.comotrabajamos img {
-  width: 700px;
-  height: 500px;
+  padding: 3px;
+  margin: 5px;
 }
 
-.sobrenosotros {
+.sobrenosotrosimg {
   display: flex;
-  justify-content: row-reverse;
+  justify-content: center;
   align-items: center;
 }
-.sobrenosotros div {
-  width: 55%;
-}
+
 .sobrenosotros div h2 {
   background-color: rgb(226, 166, 166);
   color: rgb(9, 9, 9);
   font-size: 40px;
   text-align: center;
-  border: 2px solid;
-  padding: 10px;
+  border: 1px solid;
+  padding: 8px;
+  margin: 8px;
 }
 .sobrenosotros div p {
   background-color: rgb(226, 166, 166);
   color: rgb(9, 9, 9);
   font-size: 20px;
-  text-align: center;
-  padding: 10px;
-  margin: 20px;
-}
-.sobrenosotros img {
-  width: 700px;
-  height: 420px;
+  padding: 5px;
+  margin: 5px;
 }
 
 .productos h2 {
@@ -231,6 +221,11 @@ a {
   text-align: center;
   margin: 15px;
   padding: 10px;
+  transition: 1s;
+}
+
+.productos .servicios div:hover {
+  transform: scale(1, 1);
   box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.75);
@@ -254,6 +249,12 @@ a {
 }
 
 /**---pages nuestros clientes ----*/
+.nuestrosclientes h2 {
+  font-size: 30px;
+  padding: 5px;
+  margin: 5px;
+}
+
 .grid-galeria {
   width: 100%;
   margin-top: 50px;
@@ -300,37 +301,42 @@ a {
 .trabajar_nos h2 {
   font-size: 30px;
   color: rgb(234, 148, 148);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
 }
-.trabajar_nos img {
-  width: 100%;
-  height: 100%;
-  flex-direction: column;
+.trabajar_nos p {
+  font-size: 25px;
+  color: rgb(234, 148, 148);
+  margin: 8px;
+}
+
+.trabajaconnosimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin: 5px;
 }
 
 /**----PAGES DEJANOS TU CONTACTO---*/
 .dejanostucontacto h2 {
-  font-size: 40px;
+  font-size: 30px;
   color: rgb(226, 166, 166);
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 10px;
-}
-.dejanostucontacto img {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+  padding: 5px;
+  margin: 5px;
 }
 .dejanostucontacto p {
   font-size: 30px;
   color: rgb(234, 148, 148);
+}
+
+.imagencontacto {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -348,6 +354,7 @@ footer a {
 }
 footer a h2 {
   font-size: 20px;
+  color: white;
 }
 footer i {
   font-size: 30px;
@@ -372,18 +379,18 @@ footer i {
 }
 @media screen and (max-width: 780px) {
   .nuestrosclientes h2 {
-    font-size: 20px;
+    font-size: 25px;
   }
   .nuestrosclientes p {
-    font-size: 15px;
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 542px) {
   .nuestrosclientes h2 {
-    font-size: 15px;
+    font-size: 20px;
   }
   .nuestrosclientes p {
-    font-size: 10px;
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -400,10 +407,10 @@ footer i {
 /**------media query hero-------*/
 @media screen and (max-width: 870px) {
   .hero h2 {
-    font-size: 30px;
+    font-size: 35px;
   }
   .hero p {
-    font-size: 20px;
+    font-size: 28px;
   }
   .hero a {
     font-size: 15px;
@@ -412,7 +419,15 @@ footer i {
 }
 @media screen and (max-width: 640px) {
   .hero h2 {
-    font-size: 16px;
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .hero h2 {
+    font-size: 20px;
+  }
+  .hero p {
+    font-size: 18px;
   }
 }
 /**------media query .comotrabajamos--------*/
@@ -438,17 +453,17 @@ footer i {
 }
 @media screen and (max-width: 670px) {
   .comotrabajamos div h2 {
-    font-size: 20px;
+    font-size: 25px;
     padding: 3px;
     margin: 3px;
   }
   .comotrabajamos div h3 {
-    font-size: 10px;
+    font-size: 18px;
     padding: 3px;
     margin: 3px;
   }
   .comotrabajamos div p {
-    font-size: 10px;
+    font-size: 15px;
     margin: 3px;
     padding: 3px;
   }
@@ -459,12 +474,12 @@ footer i {
 /**------media query .sobrenosotros--------*/
 @media screen and (max-width: 987px) {
   .sobrenosotros div h2 {
-    font-size: 20px;
+    font-size: 25px;
     margin: 10px;
     padding: 10px;
   }
   .sobrenosotros div p {
-    font-size: 15px;
+    font-size: 18px;
     margin: 10px;
     padding: 10px;
   }
@@ -477,12 +492,12 @@ footer i {
 }
 @media screen and (max-width: 670px) {
   .sobrenosotros div h2 {
-    font-size: 15px;
+    font-size: 20px;
     margin: 5px;
     padding: 5px;
   }
   .sobrenosotros div p {
-    font-size: 10px;
+    font-size: 15px;
     margin: 5px;
     padding: 5px;
   }
@@ -493,53 +508,60 @@ footer i {
 /**------media query pages Nosotros--------*/
 @media screen and (max-width: 759px) {
   .comotrabajamos_nos h2 {
-    font-size: 20px;
+    font-size: 25px;
     margin: 5px;
     padding: 5px;
   }
   .comotrabajamos_nos p {
-    font-size: 15px;
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 680px) {
-  .carrusel div img {
-    width: 600px !important;
+  .carousel-item img {
+    width: 500px !important;
     height: 400px !important;
-    padding: 15px !important;
+    padding: 15px;
+    margin: 15px;
+  }
+  .comotrabajamos_nos h2 {
+    font-size: 18px;
+    margin: 15px;
+  }
+  .comotrabajamos_nos p {
+    font-size: 13px;
+    margin: 15px;
+  }
+}
+@media screen and (max-width: 517px) {
+  .carousel-item img {
+    width: 350px !important;
+    height: 300px !important;
+    padding: 10px !important;
     margin: 10px !important;
   }
 }
-@media screen and (max-width: 500px) {
-  .carrusel div img {
-    width: 400px !important;
-    height: 300px !important;
-    padding: 10px !important;
-    margin: 8px !important;
+/**------media Pages Trabaja con Nosotros--------*/
+@media screen and (max-width: 735px) {
+  .trabajaconnosimg {
+    display: none;
   }
 }
-/**------media Pages Trabaja con Nosotros--------*/
 @media screen and (max-width: 685px) {
   .trabajar_nos h2 {
-    font-size: 25px;
+    font-size: 20px;
     padding: 15px;
   }
-  .trabajarconnos {
-    font-size: 20px;
-  }
-  .experiencia {
-    font-size: 20px;
+  .trabajar_nos p {
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 570px) {
   .trabajar_nos h2 {
-    font-size: 15px;
+    font-size: 19px;
     padding: 10px;
   }
-  .trabajarconnos {
-    font-size: 15px;
-  }
-  .experiencia {
-    font-size: 15px;
+  .trabajar_nos p {
+    font-size: 18px;
   }
 }
 /**------media Pages Dejanos tu contacto--------*/
@@ -549,21 +571,23 @@ footer i {
     padding: 7px;
   }
   .dejanostucontacto p {
-    font-size: 18px;
-  }
-  .formulario {
-    font-size: 10px;
-    padding: 15px;
+    font-size: 20px;
+    margin: 10px;
   }
 }
 @media screen and (max-width: 480px) {
   .dejanostucontacto h2 {
-    font-size: 20px;
+    font-size: 17px;
     padding: 5px;
   }
   .dejanostucontacto p {
-    font-size: 10px;
+    font-size: 15px;
     padding: 10px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .imagencontacto {
+    display: none;
   }
 }
 /**------media query footer--------*/
@@ -580,6 +604,6 @@ footer i {
     font-size: 10px;
   }
   footer i {
-    font-size: 10px;
+    font-size: 15px;
   }
 }/*# sourceMappingURL=estilos.css.map */

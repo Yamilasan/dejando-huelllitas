@@ -14,25 +14,35 @@ body{
     background-color:rgb(226, 166, 166);     color: white;
 }
 
-.carrusel div img{
-    width: 200% !important;
-    height: 100% !important;
-    width: 800px !important;
-    height:400px !important;
+.carousel-item{
+    margin: 20px !important;
     padding: 20px !important;
-    margin: 10px !important
 }
+.carousel-item img{
+    width: 800px !important;
+    height: 600px !important;
+    
+    
+}
+.carruseldos{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
 .trabajarconnos{
     font-size: 30px;
     color:rgb(234, 148, 148)
 }
-.experiencia{
-   
-    font-size: 30px;
-    color:rgb(234, 148, 148)   
+
+.form-label{
+    color: $color-principal !important;
+font-size: nth($font-size, 1) !important;
 }
-.formulario{
-    font-size: 15px;
-   color: rgb(234, 148, 148);
-   padding: 20px;
+
+.botonenviar{
+    color: $color-principal!important;
+    padding: 5px !important;
+    border: 1px solid !important;
+    margin: 5px !important;
 }

@@ -1,7 +1,8 @@
 .hero{
-width: 100%;
-    height: 400px;
-    background-image: url(../img/perrocorriendo.jpeg);
+    width: 100%;
+    height: 500px;
+    padding: 10px;
+    background-image: url(../img/perrocliente.jpeg);
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,68 +30,71 @@ a{
    
 }
  /**---pages nosotros ----*/
+.comotrabajamosimg{
+    @include flex(flex,center,center);
+    
+}
 .comotrabajamos{
-    @include flex(flex,space-evenly,center);
     div{
-        white-space: 50%;
         h2{
-            background-color:$color-principal;
+background-color: $color-principal;
+color: $color-cuarto;
+font-size: nth($font-size,4);
+text-align:center;
+border: 1px solid;
+padding:3px;
+margin: 5px;
+
+        }
+        h3{
+background-color: $color-principal;
+text-align: center;
+color: $color-cuarto;
+font-size: nth($font-size,3);
+padding: 5px;
+margin:5px;
+
+        }
+        p{
+background-color: $color-principal;
+text-align: center;
+color: $color-cuarto;
+font-size: nth($font-size,1);
+padding: 3px;
+margin: 5px;
+
+        }
+    }
+}
+.sobrenosotrosimg{
+    @include flex(flex,center,center);
+}
+.sobrenosotros{
+
+    div{
+        h2{
+            background-color: $color-principal;
             color: $color-cuarto;
             font-size: nth($font-size, 4);
             text-align: center;
-            border: 2px solid;
-            padding: 10px;
-        }
-        h3{
-            background-color: $color-principal;
-            text-align: center;
-            color:$color-cuarto;
-            font-size: nth($font-size, 3);
-            font-weight: 30px;
-            padding: 10px;
-            margin: 10px;
+            border: 1px solid;
+            padding: 8px;
+            margin: 8px;
+            
         }
         p{
             background-color: $color-principal;
-            text-align: center;
             color: $color-cuarto;
-            font-size: nth($font-size, 1) ;
-            font-weight: 20px;
-            padding: 10px;
-            margin: 20px;
+            font-size: nth($font-size, 1);
+            padding: 5px;
+            margin:5px;
+        
+
         }
-    }
-    img{
-        width: 700px;
-        height: 500px;
+    
     }
 }
-.sobrenosotros{
-   @include flex(flex,row-reverse,center);
-div{
-    width: 55%;
-    h2{
-        background-color: $color-principal;
-        color: $color-cuarto;
-        font-size: nth($font-size, 4);
-        text-align: center;
-        border: 2px solid;
-        padding: 10px;
-    }
-    p{
-        background-color: $color-principal;
-        color: $color-cuarto;
-        font-size: nth($font-size, 1);
-       text-align: center;
-       padding: 10px;
-       margin: 20px;
-    }
-}
-img{
-    width: 700px;
-    height: 420px;
-}
-}
+
 .productos{
     h2{
         background-color: $color-principal ;
@@ -132,10 +136,16 @@ img{
         text-align: center;
         margin: 15px;
         padding: 10px;
-        box-shadow: -1px 10px 42px -7px rgba(0,0,0,0.75); 
-        -webkit-box-shadow: -1px 10px 42px -7px rgba(0,0,0,0.75);
-        -moz-box-shadow: -1px 10px 42px -7px rgba(0,0,0,0.75);  
+        transition: 1s;
+        
     }
+}
+.productos .servicios div:hover{
+    transform: scale(1,1);
+    box-shadow: -1px 10px 42px -7px rgba(0,0,0,0.75); 
+    -webkit-box-shadow: -1px 10px 42px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 10px 42px -7px rgba(0,0,0,0.75); 
+
 }
 .comotrabajamos_nos{
     h2{
@@ -152,6 +162,14 @@ padding: 10px;
     }
 }
  /**---pages nuestros clientes ----*/
+
+ .nuestrosclientes{
+    h2{
+        font-size: nth($font-size,3);
+        padding: 5px;
+        margin: 5px;
+    }
+ }
  .grid-galeria{
      width: 100%;
     margin-top: 50px;
@@ -193,37 +211,47 @@ padding: 10px;
 }
  /**---pages trabaja con nosotros ----*/
  .trabajar_nos{
-    h2{
-font-size: nth($font-size, 3);
-    color: $color-terciario;
-    @include flex(flex,space-between,center);
-    padding: 20px; 
-    }
-    img{
-     width: 100%;
-    height: 100%;
-     flex-direction: column;
-     @extend %flex-center;
-   
-    }
+h2{
+font-size: nth($font-size,3);
+color: $color-terciario;
+text-align: center;
+padding: 5px;
+margin: 5px;
+
+}
+p{
+font-size: nth($font-size,2);
+color: $color-terciario;
+margin: 8px;
+}
  }
+   
+   
+  .trabajaconnosimg{
+    @include flex(flex,center,center);
+    padding: 5px;
+    margin: 5px;
+  }
+
+ 
  /**----PAGES DEJANOS TU CONTACTO---*/
 .dejanostucontacto{
     h2{
-  font-size: nth($font-size, 4);
+  font-size: nth($font-size, 3);
     color: $color-principal;
-    @include flex(flex,space-around,center);
-    padding: 10px;
+  @include flex(flex, space-around, center);
+    padding: 5px;
+    margin:5px;
     }
-    img{
-    width: 100%;
-    height:100%;
-    display: flex;
-    flex-direction: column;
-    }
+    
     p{
   font-size: nth($font-size, 3);
     color:$color-terciario;
-    @include flex(flex,space-between,center);
+   
     }
+    
+}
+.imagencontacto{
+    @include flex(flex, center, center);
+
 }

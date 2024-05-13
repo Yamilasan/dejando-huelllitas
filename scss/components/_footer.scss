@@ -7,7 +7,8 @@ footer{
         color: $color-secundario;
         font-size: nth($font-size, 1);
         h2{
-        font-size: nth($font-size, 1);          
+        font-size: nth($font-size, 1);  
+        color: $color-secundario;        
         }
     }
     i{

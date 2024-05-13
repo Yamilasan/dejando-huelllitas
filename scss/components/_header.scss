@@ -1,20 +1,21 @@
 header{
     background-color:$color-principal;
     @include flex(flex,center,center);
-    padding: 15px;
+    padding: 20px;
     top: 0;
     a{
-        text-decoration: none;
+           text-decoration: none;
            background-color:$color-principal;
+         
     }
     h1{
         color: $color-secundario;
-        font-size: 60px;
+        font-size: 40px;
         font-weight: 700;
         text-decoration: none;       
     }
     img{
-        width: 100px;
+            width: 100px;
             height: 100px;
     }
 
